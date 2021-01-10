@@ -1,21 +1,30 @@
+import React from "react";
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
   return (
     <header>
       <nav>
         <div className="container">
           <div className="nav-wrapper">
-            <a href="#" className="brand-logo">
+            <NavLink to="/" className="brand-logo">
               Rent Appartments
-            </a>
+            </NavLink>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               <li>
-                <a href="sass.html">Sass</a>
+                <NavLink activeClassName="active" to="/appartments">
+                  Appartments
+                </NavLink>
               </li>
               <li>
-                <a href="badges.html">Components</a>
+                <NavLink activeClassName="active" to="/news">
+                  News
+                </NavLink>
               </li>
               <li>
-                <a href="collapsible.html">JavaScript</a>
+                <NavLink activeClassName="active" to="/about">
+                  About
+                </NavLink>
               </li>
             </ul>
           </div>
