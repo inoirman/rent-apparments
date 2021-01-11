@@ -10,9 +10,8 @@ function App() {
       <Router>
         <Header />
         <Main />
+        <Footer />
       </Router>
-
-      <Footer />
     </div>
   );
 }
